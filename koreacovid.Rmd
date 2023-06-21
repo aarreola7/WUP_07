@@ -81,3 +81,4 @@ In the group of 1831 were alive , in all more females are alive than males. The 
 
 ## Conclusions
 
+In today's lesson we used the cat~cat file to create a plot using  gg plot way. We changed the class for result and named the project kRdata. We were also able to create a numerical graph and in percentage and counting. We also ran a chi-square test and a fisher's test and both were equal in p value. In the final results we were able to see the the odds of women surviving over men. The overall all results showed us that males had the short end of the stick because covid killed more males than females in Korea.
