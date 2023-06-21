@@ -58,11 +58,16 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 
 The data in this barplot allows us to see the results of the alive and dead people. We can see that Twice as many males died than females.The disease is killing more males than females according to the data from Korea.
 
-
-
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Of all the people that are still alive 56 are females and 36 are males. The number of dead people were 44 females and 64 males. The percentage was 98.7% of females remained alive while only 1.4% females died and 97% of the makes remained alive while 3% are dead. 
 
 ## Inferential results 
 
