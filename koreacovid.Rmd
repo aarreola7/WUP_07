@@ -56,7 +56,7 @@ basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-Th
+The data in this barplot allows us to see the results of the alive and dead people. We can see that Twice as many males died than females.The disease is killing more males than females according to the data from Korea.
 
 
 
