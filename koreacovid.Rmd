@@ -34,13 +34,29 @@ state of a patient must be died or alive - we adjust that as well
 We will analyze the Sex of the patient and the result  if they are alive or dead.I will use the variables in any collection of cat~cat . Which is a type of problem that we can use the helper file for and we will copy into our project to get the answer if dying is independent of sex. 
 
 
+
 ## Graphical results - use ggplot commands to do this  
 
 
 
-  
+  #### Plot barplots ggplot way
+
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+Th
 
 
 
