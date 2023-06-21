@@ -24,12 +24,14 @@ mutate(across(where(is.character), as.factor))
 Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
+ 
+ 
   
 # Your Question - Is dying independent of sex?
 
+## Methods
 
-
-
+We will analyze the Sex of the patient and the result  if they are alive or dead.I will use the variables in any collection of cat~cat . Which is a type of problem that we can use the helper file for and we will copy into our project to get the answer if dying is independent of sex. 
 
 
 ## Graphical results - use ggplot commands to do this  
